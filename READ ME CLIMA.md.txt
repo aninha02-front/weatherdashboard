@@ -1,0 +1,32 @@
+# Weather Dashboard
+
+Projeto  dashboard climático utilizando HTML, CSS e JavaScript.
+
+## Funcionalidades
+
+- Pesquisa de cidades
+- Consumo de API
+- Temperatura em tempo real
+- Umidade
+- Velocidade do vento
+- Favoritos
+- Responsividade
+- Alteração dinâmica de fundo
+- LocalStorage
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+- OpenWeather API
+
+
+## ▶ Como usar
+
+1. Crie uma conta no OpenWeather
+2. Gere sua API KEY
+3. Cole no arquivo script.js
+
+```javascript
+const apiKey = 'SUA_API_KEY';
