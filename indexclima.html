@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Clima Agora</title>
+
+    <link rel="stylesheet" href="climastyle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
 
-        <h1>🌤 Weather Dashboard</h1>
+        <div class="card">
 
-        <div class="search-box">
-            <input type="text" id="cityInput" placeholder="Digite uma cidade">
-            <button id="searchBtn">Buscar</button>
-        </div>
+            <h1>☁️ Clima Agora</h1>
 
-        <div class="weather-card hidden" id="weatherCard">
+            <p class="subtitulo">
+                Previsão do tempo em tempo real
+            </p>
 
-            <h2 id="cityName"></h2>
+            <div class="cidade">
 
-            <div class="temp" id="temperature"></div>
+                <h2 id="local">
+                    Carregando localização...
+                </h2>
 
-            <div class="description" id="description"></div>
-
-            <div class="details">
-
-                <div>
-                    <span>💧 Umidade</span>
-                    <p id="humidity"></p>
-                </div>
-
-                <div>
-                    <span>🌬 Vento</span>
-                    <p id="wind"></p>
+                <div class="data-hora">
+                    <p id="data"></p>
+                    <p id="hora"></p>
                 </div>
 
             </div>
 
-        </div>
+            <img id="icone" src="" alt="Ícone do clima">
 
-        <div class="favorites">
-            <h3>Cidades Favoritas</h3>
-            <ul id="favoritesList"></ul>
+            <h1 id="temperatura">
+                --°C
+            </h1>
+
+            <h3 id="descricao">
+                Buscando dados...
+            </h3>
+
+            <div class="info">
+
+                <div class="box">
+                    <span>💧 Umidade</span>
+                    <strong id="umidade">--%</strong>
+                </div>
+
+                <div class="box">
+                    <span>🌬 Vento</span>
+                    <strong id="vento">-- km/h</strong>
+                </div>
+
+            </div>
+
+            <button onclick="buscarClima()">
+                Atualizar Clima
+            </button>
+
         </div>
 
     </div>
@@ -51,4 +72,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
